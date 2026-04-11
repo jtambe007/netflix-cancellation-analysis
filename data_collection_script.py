@@ -7,11 +7,11 @@ API_KEY = "36f0acf5405650a6a712cc0f9942d8d9"
 BASE_URL = "https://api.themoviedb.org/3"
 
 
-def get_netflix_shows(num_pages=20):
+def get_netflix_shows(num_pages=75):
     """
     This function:
-    - Loops through 20 pages of Netflix shows
-    - Each page has ~20 shows = ~400 total shows
+    - Loops through 75 pages of Netflix shows
+    - Each page has ~75 shows = ~1500 total shows
     - Adds a delay to respect rate limits
     - Saves basic info for each show
     """
@@ -138,12 +138,12 @@ if __name__ == "__main__":
 
     # Step 1: Get basic show list
     print("\n[STEP 1/3] Fetching Netflix show IDs...")
-    df_shows = get_netflix_shows(num_pages=25)  # ~500 shows
+    df_shows = get_netflix_shows(num_pages=75)  # ~500 shows
     print(f"✅ Found {len(df_shows)} shows")
 
     # Step 2: Get detailed info for each
     print("\n[STEP 2/3] Fetching detailed information...")
-    print("This will take ~5 minutes with rate limiting...")
+    print("This will take ~10 minutes with rate limiting...")
 
     details = []
     failed = 0
