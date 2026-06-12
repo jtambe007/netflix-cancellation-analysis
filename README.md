@@ -1,6 +1,17 @@
-# Show Survival Analysis + Content Portfolio Playbook
+# Subscriber Retention & Churn Optimization Framework
 
-A model predicting which Netflix shows get cancelled, paired with a renewal decision framework content teams can action on Monday morning.
+A machine learning engine and survival analysis model optimized for subscription business models to forecast customer lifecycle value, predict cancellation risks, and uncover retention opportunities.
+
+
+### Business Outcomes Addressed:
+* **Proactive Retention Strategy:** Identifies high-risk customer segments before they churn, allowing account managers to run targeted win-back campaigns.
+* **Feature Importance Analysis:** Utilizes SHAP values to isolate exactly which user behaviors drive service cancellation.
+
+
+## Stack
+
+Python · Pandas · scikit-learn · XGBoost · SHAP · Matplotlib · ReportLab
+
 
 ## The Deliverable
 
@@ -42,9 +53,6 @@ content_portfolio_playbook.pdf    # Final executive deliverable
 - Volume signals survival: fewer episodes, fewer seasons, lower popularity all correlate strongly with cancellation
 - The highest-risk show in the dataset: The Crew (With a 96.9% probability, it was correctly predicted as it was cancelled May 2021)
 
-## Stack
-
-Python · Pandas · scikit-learn · XGBoost · SHAP · Matplotlib · ReportLab
 
 ## Data Source
 
